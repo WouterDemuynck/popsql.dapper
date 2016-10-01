@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Popsql.Dapper</RootNamespace>
     <AssemblyName>Popsql.Dapper</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,12 +37,12 @@
     <AssemblyOriginatorKeyFile>..\Popsql.Dapper.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, PublicKeyToken=e3e8412083d25dd3, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.StrongName.1.40\lib\net45\Dapper.dll</HintPath>
+    <Reference Include="Dapper.StrongName, Version=1.50.2.0, Culture=neutral, PublicKeyToken=e3e8412083d25dd3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.StrongName.1.50.2\lib\net451\Dapper.StrongName.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Popsql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7519904e0623733c, processorArchitecture=MSIL">
-      <HintPath>..\packages\popsql.1.0.1\lib\net45\Popsql.dll</HintPath>
+    <Reference Include="Popsql, Version=2.0.1.0, Culture=neutral, PublicKeyToken=7519904e0623733c, processorArchitecture=MSIL">
+      <HintPath>..\packages\popsql.2.0.1\lib\net45\Popsql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

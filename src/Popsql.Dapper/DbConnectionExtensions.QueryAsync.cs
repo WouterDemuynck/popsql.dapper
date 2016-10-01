@@ -29,12 +29,12 @@ namespace Popsql.Dapper
 		/// <returns>
 		/// An <see cref="IEnumerable{T}"/> whose elements are the results of the query.
 		/// </returns>
-		public static Task<IEnumerable<T>> QueryAsync<T>(this IDbConnection connection, SqlSelect sql, IDbTransaction transaction, int? commandTimeout = null, CommandType? commandType = null)
+		public static Task<IEnumerable<T>> QueryAsync<T>(this IDbConnection connection, SqlSelect sql, IDbTransaction transaction, int? commandTimeout = null)
 		{
 			if (connection == null) throw new ArgumentNullException(nameof(connection));
 			if (sql == null) throw new ArgumentNullException(nameof(sql));
 
-			return Invoke(sql, (s, o) => connection.QueryAsync<T>(s, o, transaction, commandTimeout, commandType));
+			return Invoke(sql, (s, o) => connection.QueryAsync<T>(s, o, transaction, commandTimeout));
 		}
 
 		/// <summary>
@@ -52,22 +52,18 @@ namespace Popsql.Dapper
 		/// <param name="transaction">
 		/// The <see cref="IDbTransaction"/> within which the statement executes.
 		/// </param>
-		/// <param name="buffered">
-		/// <see langword="true"/> to read all results immediately, or <see langword="false"/> to defer execution until the
-		/// result is enumerated.
-		/// </param>
 		/// <param name="commandTimeout">
 		/// The wait time (in seconds) before terminating the attempt to execute the statement and generating an error.
 		/// </param>
 		/// <returns>
 		/// An <see cref="IEnumerable{T}"/> whose elements are the results of the query.
 		/// </returns>
-		public static Task<IEnumerable<T>> QueryAsync<T>(this IDbConnection connection, SqlUnion sql, IDbTransaction transaction, int? commandTimeout = null, CommandType? commandType = null)
+		public static Task<IEnumerable<T>> QueryAsync<T>(this IDbConnection connection, SqlUnion sql, IDbTransaction transaction, int? commandTimeout = null)
 		{
 			if (connection == null) throw new ArgumentNullException(nameof(connection));
 			if (sql == null) throw new ArgumentNullException(nameof(sql));
 
-			return Invoke(sql, (s, o) => connection.QueryAsync<T>(s, o, transaction, commandTimeout, commandType));
+			return Invoke(sql, (s, o) => connection.QueryAsync<T>(s, o, transaction, commandTimeout));
 		}
 	}
 }

@@ -3,7 +3,7 @@
   <metadata>
     <id>popsql.dapper</id>
     <version>1.0.0</version>
-    <title>Popsql</title>
+    <title>Popsql.Dapper</title>
     <authors>Wouter Demuynck</authors>
     <description>An extension to the Popsql library that integrates it seamlessly with the Dapper micro-ORM.</description>
     <language>en-US</language>
@@ -15,8 +15,8 @@
       <reference file="Popsql.Dapper.dll" />
     </references>
 	<dependencies>
-	  <dependency id="Popsql" version="1.0.1" />
-      <dependency id="Dapper.StrongName" version="1.40.0" />
+	  <dependency id="Popsql" version="2.0.0" />
+      <dependency id="Dapper.StrongName" version="1.50.2" />
     </dependencies>	
   </metadata>
   <files>
