@@ -20,7 +20,7 @@
     </dependencies>	
   </metadata>
   <files>
-    <file src="..\bin\Release\Popsql.Dapper.dll" target="lib\net45\Popsql.Dapper.dll" />
-    <file src="..\bin\Release\Popsql.Dapper.xml" target="lib\net45\Popsql.Dapper.xml" />
+    <file src="Popsql.Dapper.dll" target="lib\net45\Popsql.Dapper.dll" />
+    <file src="Popsql.Dapper.xml" target="lib\net45\Popsql.Dapper.xml" />
   </files>
 </package>
